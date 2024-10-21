@@ -4,7 +4,7 @@ public class ChoseYourPath {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
 
-    // initial scene
+    // Scene 1
     System.out.println(
         "You wake up in a long creepy hallway with nothing but a mad lib booklet and a pencil. You look down at the paper.");
 
@@ -44,9 +44,37 @@ public class ChoseYourPath {
     // Output concatination
     System.out.println(partOne + partTwo + partThree + partFour);
 
-    //Scene 2
-    System.out.println("You look up. A " + userInput2 + "" + userInput3 + "is chargine at you.")
-    System.out.println("Will you dodge (yes/no)")
+    // Scene 2
+    System.out.println("You look up. A " + userInput2 + " " + userInput3 + " is charging at you.");
+    // prompt 2
+    System.out.println("Will you dodge (yes/no)");
+    String answer = sc.nextLine();
 
+    // decision 1
+    if (answer.equals("yes")) {
+      System.out.println("You dodge. The " + userInput2 + " " + userInput3 + " is very sad. Look what you did.");
+      System.out.println("Do you comfort the " + userInput2 + " " + userInput3 + " or do you gloat? (comfort/gloat)");
+      answer = sc.nextLine();
+    }
+    // decision 1 line 1
+    if (answer.equals("comfort")) {
+      System.out.println(
+          "You comfort the " + userInput2 + " " + userInput3 + ". Suddenly, Aaron Rodgers knocks on the door.");
+      System.out.println("Do you open it? (yes/no)");
+      answer = sc.nextLine();
+
+    }
+    // decision 1 line 2
+    else if (answer.equals("gloat")) {
+      System.out.println("You gloat in front of the " + userInput2 + " " + userInput3 + ". It begins to cry.");
+      System.out.println("Do you help it? (yes/no)");
+      answer = sc.nextLine();
+    }
+
+    // decision 2
+    else if (answer.equals("no")) {
+      System.out.println("You stand still. The " + userInput2 + " " + userInput3
+          + " runs up to you and gives you a hug. You are now friends");
+    }
   }
 }
