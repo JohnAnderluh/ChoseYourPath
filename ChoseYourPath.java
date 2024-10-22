@@ -62,6 +62,13 @@ public class ChoseYourPath {
           "You comfort the " + userInput2 + " " + userInput3 + ". Suddenly, Aaron Rodgers knocks on the door.");
       System.out.println("Do you open it? (yes/no)");
       answer = sc.nextLine();
+    }
+    if (answer.equals("yes")) {
+      System.out.println(
+          "You open the door. Its Aaron Rodgers! \"Hi\" he says. \"I am signing you to the Jets!\" You live happily ever after.");
+    } else if (answer.equals("no")) {
+      System.out.println("You open the door. Its Aaron Rodgers! Suddenly, the " + userInput2 + " " + userInput3
+          + " runs toward the door. Aaron rodgers is it's favorite quarterback. You are in the way and are trampled and die.");
 
     }
     // decision 1 line 2
